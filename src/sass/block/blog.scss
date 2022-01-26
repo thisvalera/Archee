@@ -1,0 +1,11 @@
+.blog {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    &:not(:first-child) {
+      margin-left: 72px;
+    }
+  }
+}

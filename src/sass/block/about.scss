@@ -1,0 +1,25 @@
+.about {
+  background-color: $color-bg-about;
+  padding: 75px 0;
+
+  &__container {
+    @include flex-center-v;
+  }
+  &__img {
+    margin-left: -150px;
+    margin-right: 37px;
+    mix-blend-mode: darken;
+    max-width: none;
+  }
+  &__title {
+    @include reset-model;
+    @include font-cabinet-black;
+    @include font(48px, 60px);
+    color: $color-text-dark;
+    margin-bottom: 20px;
+  }
+  &__description {
+    @include reset-model;
+    margin-bottom: 40px;
+  }
+}

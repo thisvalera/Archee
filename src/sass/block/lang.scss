@@ -1,0 +1,35 @@
+.lang {
+  @include reset-list;
+
+  &__link {
+    @include reset-link;
+    @include font-helvetica-medium;
+    @include font(14px, 21px);
+    color: $color-text-dark;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__item:first-child {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: table;
+      width: 12px;
+      height: 7px;
+      background: url("../img/arrow-duwn.svg") no-repeat;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover &__item {
+    display: flex;
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}

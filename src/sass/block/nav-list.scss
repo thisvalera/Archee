@@ -1,0 +1,21 @@
+.nav-list {
+  @include reset-list;
+  display: flex;
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__link {
+    @include reset-link;
+    @include font-helvetica-medium;
+    @include font(14px, 21px);
+    color: $color-text-dark;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    padding-bottom: 4px;
+    &:hover {
+      border-bottom: 1px solid $color-text-dark;
+    }
+  }
+}

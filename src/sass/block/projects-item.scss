@@ -1,0 +1,28 @@
+.projects-item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  &:nth-child(even) {
+    margin-right: -150px;
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &__inner {
+    margin-top: 20px;
+  }
+
+  &__title {
+    @include reset-model;
+    @include font-cabinet-black;
+    @include font(32px, 40px);
+    color: $color-text-dark;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    max-width: 330px;
+  }
+}

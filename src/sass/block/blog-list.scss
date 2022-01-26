@@ -1,0 +1,52 @@
+.blog-list {
+  display: flex;
+  @include reset-list;
+  &__img {
+    @include reset-model;
+    display: inline-block;
+    margin-bottom: 39px;
+  }
+  &__author-inner {
+    margin-bottom: 30px;
+  }
+  &__date-link {
+    @include reset-link;
+    @include font(14px, 28px);
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 13px;
+  }
+  &__name-link {
+    @include reset-link;
+    @include font(14px, 28px);
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 16px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-orange;
+      border-radius: 50%;
+    }
+  }
+  &__title-link {
+    @include reset-link;
+  }
+  &__title {
+    @include reset-model;
+    @include font-cabinet-black;
+    @include font(32px, 40px);
+    color: $color-text-dark;
+    margin-bottom: 10px;
+    max-width: 479px;
+  }
+  &__descr {
+    max-width: 458px;
+  }
+}

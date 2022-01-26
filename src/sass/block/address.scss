@@ -1,0 +1,9 @@
+.address {
+  max-width: 144px;
+  &__loc {
+    @include reset-model;
+  }
+  &__tel {
+    @include reset-link;
+  }
+}

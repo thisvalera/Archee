@@ -1,0 +1,8 @@
+.services-list {
+  @include reset-list;
+  display: flex;
+  gap: 134px;
+  &__item {
+    max-width: 292px;
+  }
+}

@@ -1,0 +1,7 @@
+.footer-social {
+  @include reset-list;
+
+  &__link {
+    @include reset-link;
+  }
+}

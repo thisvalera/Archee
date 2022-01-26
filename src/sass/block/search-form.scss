@@ -1,0 +1,31 @@
+.search-form {
+  display: flex;
+  &__field {
+    @include reset-input;
+    @include font-helvetica-medium;
+    @include font(16px, 24px);
+    background-color: $color-bg-input;
+    background-repeat: no-repeat;
+    background-position: center right 22px;
+    border-radius: 6px;
+    padding: 18px 62px 18px 20px;
+    margin-right: 20px;
+    flex-grow: 1;
+
+    &--location {
+      background-image: url("../img/pin.svg");
+    }
+    &--type {
+      background-image: url("../img/home.svg");
+    }
+    &--budget {
+      background-image: url("../img/dollar.svg");
+    }
+    &::placeholder {
+      color: rgba(97, 89, 77, 0.6);
+    }
+    &:focus {
+      outline: solid 1px #ddd;
+    }
+  }
+}
